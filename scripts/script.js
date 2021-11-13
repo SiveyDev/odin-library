@@ -1,6 +1,7 @@
 let myLibrary = [];
-
-addBookToLibrary();
+const bookList = document.querySelector('.book-list');
+console.log(bookList);
+// addBookToLibrary();
 
 function Book (title, author, pages, hasRead) {
     this.title = title;
@@ -27,4 +28,8 @@ function addBookToLibrary() {
     let myBook = new Book(title, author, pages, hasRead);
     myLibrary.push(myBook);
     console.log(myLibrary);
+}
+
+function displayLibrary() {
+    let bookItem = document.createElement('p');
 }
